@@ -1,0 +1,92 @@
+/*=== Aplicando CSS Global. ===*/
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+img{
+    width: 100%;
+}
+ul{
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: #EFF5F5;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #EFF5F5;
+    font-family: 'Belanosima', sans-serif;
+}
+
+/*=== Aplicando CSS al encabezado. ===*/
+
+#encabezado {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #00425A;
+    color: #EFF5F5;
+    padding: 2%;
+}
+
+#menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    justify-content: space-around;
+    align-items: center;
+}
+-+
+#logo {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.opcion_menu {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+/*=== Aplicando CSS al pie de página. ===*/
+
+#pie_pagina {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content:space-evenly;
+    align-items: center;
+    background-color: #00425A;
+    color: #EFF5F5;
+    padding: 2%;
+}
+
+#pie_pagina div h2 {
+    text-align: center;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+    
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+    
+}
+
+
+
+
