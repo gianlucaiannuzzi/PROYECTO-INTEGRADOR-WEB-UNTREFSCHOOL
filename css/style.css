@@ -17,6 +17,10 @@ a {
     color: #EFF5F5;
 }
 
+a:hover {
+    color: #1F8A70;
+}
+
 html{
     scroll-behavior: smooth;
 }
@@ -36,6 +40,10 @@ body{
     background-color: #00425A;
     color: #EFF5F5;
     padding: 2%;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 2;
 }
 
 #menu {
@@ -44,7 +52,7 @@ body{
     justify-content: space-around;
     align-items: center;
 }
--+
+
 #logo {
     text-align: center;
     font-size: 2rem;
@@ -54,6 +62,63 @@ body{
     text-align: center;
     font-size: 1.5rem;
 }
+
+/*=== Aplicando CSS al cuerpo del documento. ===*/
+
+#provisional {
+    margin-top: 10%;
+}
+
+.seccion {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2.5%;
+    gap: 2.5%;
+}
+
+.banner img{
+    border-radius: 2.5%;
+}
+.descripcion h1{
+    font-size: 4rem;
+    text-align: center;
+    margin: 2.5%;
+}
+
+.descripcion p {
+    font-size: 1.5rem;
+    text-align: justify;
+}
+
+/*=== Aplicando CSS al formulario de contacto. ===*/
+
+#banner_formulario {
+    width: 85%;
+    margin: auto;
+}
+
+#banner_formulario img {
+    border-radius: 2.5%;
+}
+
+#formularios {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2.5%;
+}
+
+#formulario_registro { 
+    text-align: center;
+}
+
+.campos_formulario {
+    display: inline;
+}
+
 
 /*=== Aplicando CSS al pie de página. ===*/
 
@@ -68,7 +133,7 @@ body{
     padding: 2%;
 }
 
-#pie_pagina div h2 {
+#pie_pagina div {
     text-align: center;
 }
 

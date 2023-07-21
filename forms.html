@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!--Para incorporar SEO se van a definir los siguientes meta tags, a su vez que se va a subdividir en secciones.-->
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" conmtent="Gianluca Iannuzzi">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Titulo de nuestro sitio web.-->
+    <title>UntrefSchool - Inicio</title>
+
+    <!--Asignamos nuestro icono al documento.-->
+    <link rel="icon" href="img/icono.png" type="image/png">
+
+    <!--Relacionamos el documento HTML con nuestra hoja de estilos CSS.-->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!--Importamos la fuente a utilizar-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Belanosima&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header id="encabezado">
+        <figure id="logo">
+            <h1><a href="index.html">Untref School</a></h1>
+        </figure>
+        <nav id="barra_navegacion">
+            <ul id="menu">
+                <li class="opcion_menu"><a href="index.html#quienes_somos">Quienes somos</a></li>
+                <li class="opcion_menu"><a href="index.html#por_que_elegirnos">¿Por qué elegirnos?</a></li>
+                <li class="opcion_menu"><a href="index.html#propuesta_educativa">Propuesta educativa</a></li>
+                <li class="opcion_menu"><a href="index.html#ultimas_noticias">Últimas noticias</a></li>
+                <li class="opcion_menu"><a href="forms.html">Contáctanos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="cuerpo">
+        <div id="provisional"></div>
+        <section id="banner_formulario">
+            <img src="https://cdn.pixabay.com/photo/2016/06/01/06/26/open-book-1428428_1280.jpg" alt="">
+        </section>
+        <section id="formularios">
+            <form action="" id="formulario_registro">
+                <div class="campos_formulario">
+                    <label for="nombre">Nombre</label><br>
+                    <input type="text" name="nombre"><br>
+                    <label for="apellido">Apellido</label><br>
+                    <input type="text" name="apellido"><br>
+                    <label for="email">Correo Electrónico</label><br>
+                    <input type="email" name="email"><br>
+                    <label for="contraseña">Contraseña</label><br>
+                    <input type="password" name="contraseña"><br>
+                    <button type="submit">Registrarse</button>
+                </div>
+            </form>
+
+            <form action="" id="formulario_iniciar_sesion">
+                <div class="campos_formulario">
+                    <label for="email">Correo Electrónico</label><br>
+                    <input type="email" name="email"><br>
+                    <label for="contraseña">Contraseña</label><br>
+                    <input type="password" name="contraseña"><br>
+                    <button type="submit">Iniciar sesión</button>
+                </div>
+            </form>
+        </section>
+        <footer id="pie_pagina">
+            <div id="redes_sociales">
+                <h2>Redes sociales</h2>
+                <ul>
+                    <li>untref.school</li>
+                    <li>@untrefschool</li>
+                </ul>
+            </div>
+            <div id="instituto">
+                <h2>Instituto</h2>
+                <iframe src="https://www.google.com.ar/maps/place/Universidad+Nacional+de+Tres+de+Febrero+-+Sede+Caseros+I/@-34.6206105,-58.5695013,14z/data=!4m6!3m5!1s0x95bccacb9f8ff113:0x22fd08da6711928d!8m2!3d-34.6050379!4d-58.5643367!16s%2Fm%2F047sd52?entry=ttu" frameborder="0" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            <div id="contacto">
+                <h2>Contacto</h2>
+                <ul>
+                    <li>untrefschool@gmail.com</li>
+                    <li>+1159823587</li>
+                </ul>
+            </div>
+        </footer>
+    </main>
+</body>
+</html>
