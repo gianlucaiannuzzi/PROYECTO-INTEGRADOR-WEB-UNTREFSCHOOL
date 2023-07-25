@@ -33,34 +33,21 @@ body{
 /*=== Aplicando CSS al encabezado. ===*/
 
 #encabezado {
-    display: grid;
-    grid-template-columns: 1fr 3fr;
-    justify-content: space-between;
-    align-items: center;
     background-color: #00425A;
     color: #EFF5F5;
-    padding: 2%;
     position: fixed;
     width: 100%;
     top: 0;
+    padding: 2%;
     z-index: 2;
-}
-
-#menu {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    justify-content: space-around;
-    align-items: center;
 }
 
 #logo {
     text-align: center;
-    font-size: 2rem;
 }
 
 .opcion_menu {
     text-align: center;
-    font-size: 1.5rem;
 }
 
 /*=== Aplicando CSS al cuerpo del documento. ===*/
@@ -70,32 +57,24 @@ body{
 }
 
 .seccion {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-content: space-between;
-    align-items: center;
     margin: 2.5%;
-    gap: 2.5%;
 }
 
 .banner img{
     border-radius: 2.5%;
 }
 .descripcion h1{
-    font-size: 4rem;
-    text-align: center;
     margin: 2.5%;
 }
 
 .descripcion p {
-    font-size: 1.5rem;
     text-align: justify;
 }
 
 /*=== Aplicando CSS al formulario de contacto. ===*/
 
 #banner_formulario {
-    width: 85%;
+    width: 100%;
     margin: auto;
 }
 
@@ -106,7 +85,7 @@ body{
 #formularios {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     padding: 2.5%;
 }
@@ -115,41 +94,431 @@ body{
     text-align: center;
 }
 
-.campos_formulario {
-    display: inline;
+#formulario_iniciar_sesion {
+    text-align: center;
 }
-
 
 /*=== Aplicando CSS al pie de página. ===*/
 
 #pie_pagina {
 
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    justify-content:space-evenly;
-    align-items: center;
     background-color: #00425A;
     color: #EFF5F5;
-    padding: 2%;
+    width: 100%;
 }
 
-#pie_pagina div {
+.seccion_footer ul li {
+    text-align: center
+}
+
+#pie_pagina {
     text-align: center;
 }
 
-/* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) {
+/*=== Dispositivos Moviles ===*/
+@media (min-width: 320px) and (max-width: 767px) {
+
+    /*=== Aplicando CSS al encabezado. ===*/
+
+    #encabezado {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 2fr;
+    }
+
+    #logo {
+        grid-row: 1;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    #logo a {
+        text-align: center;
+    }
+
+    #menu {
+        display: grid;
+        grid-template-rows: repeat(5, 1fr);
+        text-align: center;
+    }
+
+    .opcion_menu {
+        font-size: 1.2rem;
+    }
+
+    /*=== Aplicando CSS al cuerpo del documento. ===*/
+
+    
+    body {
+        padding-top: 40%;
+    }
+
+    #cuerpo {
+        margin: auto;
+    }
+
+    #por_que_elegirnos .banner {
+        display: none;
+    }
+
+    #ultimas_noticias .banner {
+        display: none;
+    }
+
+    .banner img{
+        border-radius: 2.5%;
+    }
+
+    .banner_movil img{
+        border-radius: 2.5%;
+    }
+
+    .descripcion h1{
+        font-size: 2rem;
+        text-align: center;
+        margin: 2.5%;
+    }
+
+    .descripcion p {
+        font-size: 1rem;
+        text-align: justify;
+    }
+
+    /*=== Aplicando CSS al formulario de contacto. ===*/
+
+    #banner_formulario {
+        width: 85%;
+        margin: auto;
+    }
+
+    #banner_formulario img {
+        border-radius: 2.5%;
+    }
+
+    #formularios {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: space-around;
+        align-items: center;
+        padding: 2.5%;
+    }
+
+    #formulario_registro { 
+        text-align: center;
+    }
+
+    #formulario_iniciar_sesion {
+        text-align: center;
+    }
+
+    .campos_formulario {
+        display: inline;
+    }
+
+
+    /*=== Aplicando CSS al pie de página. ===*/
+
+    #pie_pagina {
+
+        display: grid;
+        grid-template-rows: 1fr 2fr 1fr;
+        justify-content:space-evenly;
+        align-items: center;
+        background-color: #00425A;
+        color: #EFF5F5;
+        padding: 2%;
+    }
+
+    .seccion_footer{
+        padding: 2.5%;
+        font-size: 1.2rem;
+    }
+
+    .seccion_footer h2{
+        padding: 2%;
+    }
+
+    .seccion_footer ul li {
+        text-align: center
+    }
+
+    #pie_pagina {
+        text-align: center;
+    }
 
 }
 
 /* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) { 
+@media (min-width: 768px) and (max-width: 1199px) { 
     
+/*=== Aplicando CSS al encabezado. ===*/
+
+    #encabezado {
+        display: grid;
+        grid-template-rows: 1fr 2fr;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    #logo {
+        grid-row: 1;
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    #logo a {
+        text-align: center;
+    }
+
+    #menu {
+        grid-row: 2;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        text-align: center;
+        gap: 5%;
+    }
+
+    .opcion_menu {
+        font-size: 1.5rem;
+    }
+
+    /*=== Aplicando CSS al cuerpo del documento. ===*/
+
+    body {
+        padding-top: 20%;
+    };
+
+    #cuerpo {
+        margin: auto;
+    }
+
+    #por_que_elegirnos .banner {
+        display: none;
+    }
+
+    #ultimas_noticias .banner {
+        display: none;
+    }
+
+    .banner img{
+        border-radius: 2.5%;
+    }
+
+    .banner_movil img{
+        border-radius: 2.5%;
+    }
+
+    .descripcion h1{
+        font-size: 2rem;
+        text-align: center;
+        margin: 2.5%;
+    }
+
+    .descripcion p {
+        font-size: 1rem;
+        text-align: justify;
+    }
+
+    /*=== Aplicando CSS al formulario de contacto. ===*/
+
+    #banner_formulario {
+        width: 85%;
+        margin: auto;
+    }
+
+    #banner_formulario img {
+        border-radius: 2.5%;
+    }
+
+    #formularios {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: space-around;
+        align-items: center;
+        padding: 2.5%;
+    }
+
+    #formulario_registro { 
+        text-align: center;
+    }
+
+    #formulario_iniciar_sesion {
+        text-align: center;
+    }
+
+    .campos_formulario {
+        display: inline;
+    }
+
+
+    /*=== Aplicando CSS al pie de página. ===*/
+
+    #pie_pagina {
+
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-content:space-between;
+        align-items:baseline;
+        background-color: #00425A;
+        color: #EFF5F5;
+        padding: 2%;
+    }
+
+    .seccion_footer{
+        padding: 2.5%;
+        font-size: 1.2rem;
+    }
+
+    .seccion_footer h2{
+        padding: 2%;
+    }
+
+    .seccion_footer ul li {
+        text-align: center
+    }
+
+    #pie_pagina {
+        text-align: center;
+    }
+
 }
 
-/* X-Large devices (large desktops, 1200px and up) */
+/*=== Vista de escritorio ===*/
 @media (min-width: 1200px) { 
     
+    /*=== Aplicando CSS al encabezado. ===*/
+
+    #encabezado {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #00425A;
+        color: #EFF5F5;
+        padding: 2%;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 2;
+    }
+
+    #menu {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    #logo {
+        text-align: center;
+        font-size: 1.6rem;
+    }
+
+    .opcion_menu {
+        text-align: center;
+        font-size: 1.5rem;
+    }
+
+    /*=== Aplicando CSS al cuerpo del documento. ===*/
+
+    #provisional {
+        margin-top: 10%;
+    }
+
+    .seccion {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: space-between;
+        align-items: center;
+        margin: 2.5%;
+        gap: 2.5%;
+    }
+
+    .banner img{
+        border-radius: 2.5%;
+    }
+    .descripcion h1{
+        font-size: 4rem;
+        text-align: center;
+        margin: 2.5%;
+    }
+
+    .descripcion p {
+        font-size: 1.5rem;
+        text-align: justify;
+    }
+
+    #por_que_elegirnos .banner_movil {
+        display: none;
+    }
+
+    #ultimas_noticias .banner_movil {
+        display: none;
+    }
+
+    /*=== Aplicando CSS al formulario de contacto. ===*/
+
+    #banner_formulario {
+        width: 85%;
+        margin: auto;
+    }
+
+    #banner_formulario img {
+        border-radius: 2.5%;
+    }
+
+    #formularios {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: space-around;
+        align-items: center;
+        padding: 2.5%;
+    }
+
+    #formulario_registro { 
+        text-align: center;
+    }
+
+    #formulario_iniciar_sesion {
+        text-align: center;
+    }
+
+    .campos_formulario {
+        display: inline;
+    }
+
+
+    /*=== Aplicando CSS al pie de página. ===*/
+
+    #pie_pagina {
+
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-content:space-evenly;
+        align-items:first baseline;
+        background-color: #00425A;
+        color: #EFF5F5;
+        padding: 2%;
+        width: 100%;
+        z-index: 2;
+    }
+
+    .seccion_footer{
+        padding: 2.5%;
+        font-size: 1.5rem;
+    }
+
+    .seccion_footer h2{
+        padding: 2%;
+    }
+
+    .seccion_footer ul li {
+        text-align: center
+    }
+
+    #pie_pagina {
+        text-align: center;
+    }
 }
 
 
