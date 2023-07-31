@@ -3,32 +3,32 @@
 <head>
     <!--Para incorporar SEO se van a definir los siguientes meta tags, a su vez que se va a subdividir en secciones.-->
     <meta charset="UTF-8">
-    <meta name="description" content="">
-    <meta name="keywords" content="">
+    <meta name="description" content="Sitio web dedicado al instituto Untref School. En el es posible crear una cuenta, visualizar todas las caracteristicas posibles e informarse sobre nuestra prestigiosa escuela.">
+    <meta name="keywords" content="untref, school, instituto, escuela, primaria, educacion, docentes, enseñanza, alumnos, contacto, propuesta, academia">
     <meta name="author" conmtent="Gianluca Iannuzzi">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <!--Titulo de nuestro sitio web.-->
-    <title>UntrefSchool - Inicio</title>
-
+    <title>Untref School - Inicio</title>
     <!--Asignamos nuestro icono al documento.-->
     <link rel="icon" href="img/icono.png" type="image/png">
-
     <!--Relacionamos el documento HTML con nuestra hoja de estilos CSS.-->
     <link rel="stylesheet" href="css/style.css">
-
-    <!--Importamos la fuente a utilizar-->
+    <!--Importamos la fuente a utilizar.-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Belanosima&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!--Definimos el encabezado de nuestro documento.-->
     <header id="encabezado">
+        <!--Creamos nuestro logo.-->
         <figure id="logo">
             <h1><a href="index.html">Untref School</a></h1>
         </figure>
+        <!--Creamos nuestra barra de navegacion en formato de lista.-->
         <nav id="barra_navegacion">
             <ul id="menu">
+                <!--Cada uno de los elementos de esta lista es un titulo o seccion del documento, y al clickearlos seremos redirigidos a estos.-->
                 <li class="opcion_menu"><a href="#quienes_somos">Quienes somos</a></li>
                 <li class="opcion_menu"><a href="#por_que_elegirnos">¿Por qué elegirnos?</a></li>
                 <li class="opcion_menu"><a href="#propuesta_educativa">Propuesta educativa</a></li>
@@ -37,32 +37,37 @@
             </ul>
         </nav>
     </header>
+    <!--Definimos el contenido de nuestro documento, es decir, las secciones y el pie de página.-->
     <main id="cuerpo">
-        <div id="provisional"></div>
+        <!--Cada titulo tiene una seccion propia que respondera a la misma clase CSS.-->
         <section id="quienes_somos" class="seccion">
+            <!--Cada seccion se divide en una imagen, llamada banner.-->
             <div class="banner">
-                <img src="https://cdn.pixabay.com/photo/2020/01/22/09/39/teacher-4784916_1280.jpg" alt="">
+                <img src="img/banner_quienes_somos.jpg" alt="">
             </div>
+            <!--Y una descripcion, que consta de un titulo y un texto de ejemplo que puede ser modificado.-->
             <div class="descripcion">
                 <h1>Quienes somos</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, dolores a recusandae vel eum cum nostrum dolore! Blanditiis illum molestias sint. Modi officia quidem nisi aliquid hic officiis dolore reprehenderit tenetur corporis aut eveniet cumque explicabo soluta molestias voluptatibus porro veniam architecto ex et veritatis facere fugiat, tempora cum. Aspernatur ad voluptatibus ducimus maxime laudantium error dolorum nostrum quibusdam, tenetur minima. Vitae nulla similique, soluta aperiam inventore amet asperiores aliquam fugiat possimus. Sed, laborum earum deserunt sit quasi, at rem explicabo minima autem adipisci beatae aperiam. Amet, ipsam expedita eveniet, beatae asperiores quis voluptatibus harum natus ad animi, voluptates tempora.</p>
             </div>
         </section>
         <section id="por_que_elegirnos" class="seccion">
+            <!--En el caso de dispositivos moviles, el banner ocupara otro lugar respecto a la descripción. Esto se configurará mediante CSS.-->
             <div class="banner_movil">
-                <img src="https://cdn.pixabay.com/photo/2020/01/22/09/40/teacher-4784917_1280.jpg" alt="">
+                <img src="img/banner_por_que_elegirnos.jpg" alt="">
             </div>
             <div class="descripcion">
                 <h1>¿Por qué elegirnos?</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, dolores a recusandae vel eum cum nostrum dolore! Blanditiis illum molestias sint. Modi officia quidem nisi aliquid hic officiis dolore reprehenderit tenetur corporis aut eveniet cumque explicabo soluta molestias voluptatibus porro veniam architecto ex et veritatis facere fugiat, tempora cum. Aspernatur ad voluptatibus ducimus maxime laudantium error dolorum nostrum quibusdam, tenetur minima. Vitae nulla similique, soluta aperiam inventore amet asperiores aliquam fugiat possimus. Sed, laborum earum deserunt sit quasi, at rem explicabo minima autem adipisci beatae aperiam. Amet, ipsam expedita eveniet, beatae asperiores quis voluptatibus harum natus ad animi, voluptates tempora.</p>
             </div>
+            <!--En el caso de tablets o vista de escritorio, el banner ocupara otro lugar respecto a la descripción. Esto se configurará mediante CSS.-->
             <div class="banner">
-                <img src="https://cdn.pixabay.com/photo/2020/01/22/09/40/teacher-4784917_1280.jpg" alt="">
+                <img src="img/banner_por_que_elegirnos.jpg" alt="">
             </div>
         </section>
         <section id="propuesta_educativa" class="seccion">
             <div class="banner">
-                <img src="https://cdn.pixabay.com/photo/2018/09/26/09/07/education-3704026_1280.jpg" alt="">
+                <img src="img/banner_propuesta_educativa.webp" alt="">
             </div>
             <div class="descripcion">
                 <h1>Propuesta educativa</h1>
@@ -70,18 +75,22 @@
             </div>
         </section>
         <section id="ultimas_noticias" class="seccion">
+            <!--En el caso de dispositivos moviles, el banner ocupara otro lugar respecto a la descripción. Esto se configurará mediante CSS.-->
             <div class="banner_movil">
-                <img src="https://cdn.pixabay.com/photo/2017/09/28/11/13/the-university-2795198_1280.jpg" alt="">
+                <img src="img/banner_ultimas_noticias.jpg" alt="">
             </div>
             <div class="descripcion">
                 <h1>Últimas noticias</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, dolores a recusandae vel eum cum nostrum dolore! Blanditiis illum molestias sint. Modi officia quidem nisi aliquid hic officiis dolore reprehenderit tenetur corporis aut eveniet cumque explicabo soluta molestias voluptatibus porro veniam architecto ex et veritatis facere fugiat, tempora cum. Aspernatur ad voluptatibus ducimus maxime laudantium error dolorum nostrum quibusdam, tenetur minima. Vitae nulla similique, soluta aperiam inventore amet asperiores aliquam fugiat possimus. Sed, laborum earum deserunt sit quasi, at rem explicabo minima autem adipisci beatae aperiam. Amet, ipsam expedita eveniet, beatae asperiores quis voluptatibus harum natus ad animi, voluptates tempora.</p>
             </div>
+            <!--En el caso de dispositivos moviles, el banner ocupara otro lugar respecto a la descripción. Esto se configurará mediante CSS.-->
             <div class="banner">
-                <img src="https://cdn.pixabay.com/photo/2017/09/28/11/13/the-university-2795198_1280.jpg" alt="">
+                <img src="img/banner_ultimas_noticias.jpg" alt="">
             </div>
         </section>
+        <!--Definimos el pie de página de nuestro documento.-->
         <footer id="pie_pagina">
+            <!--El pie de página tambien se divide en secciones para su facil manejo en CSS.-->
             <div class="seccion_footer">
                 <h2>Redes sociales</h2>
                 <ul>
@@ -90,6 +99,7 @@
                     <li><a href="https://www.facebook.com" target="_blank"><ion-icon name="logo-facebook"></ion-icon> Untref School</a></li>
                 </ul>
             </div>
+            <!--La siguiente seccion utiliza un mapa interactivo con la localización geografica del instituto.-->
             <div class="seccion_footer">
                 <h2>Instituto</h2>
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13135.943769050795!2d-58.5643429!3d-34.60451698351923!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccacb9f8ff113%3A0x22fd08da6711928d!2sUniversidad%20Nacional%20de%20Tres%20de%20Febrero%20-%20Sede%20Caseros%20I!5e0!3m2!1ses-419!2sar!4v1689904556383!5m2!1ses-419!2sar" width="50%" height="50%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -103,6 +113,7 @@
             </div>
         </footer>
     </main>
+    <!--Los siguientes scripts son necesarios para utilizar "Ion Icon".-->
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>

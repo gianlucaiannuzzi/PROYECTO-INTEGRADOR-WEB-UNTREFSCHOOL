@@ -30,6 +30,11 @@ body{
     font-family: 'Belanosima', sans-serif;
 }
 
+button {
+    background-color: #00425A;
+    color:#EFF5F5;
+}
+
 /*=== Aplicando CSS al encabezado. ===*/
 
 #encabezado {
@@ -115,7 +120,7 @@ body{
     text-align: center;
 }
 
-/*=== Dispositivos Moviles ===*/
+/*=== Vista de Dispositivos Moviles (>320px) ===*/
 @media (min-width: 320px) and (max-width: 767px) {
 
     /*=== Aplicando CSS al encabezado. ===*/
@@ -186,21 +191,27 @@ body{
 
     /*=== Aplicando CSS al formulario de contacto. ===*/
 
-    #banner_formulario {
-        width: 85%;
+    .seccion_contacto {
+        padding: 5%;
+    }
+
+    #seccion_iniciar_sesion #banner_contacto{
+        display: none;
+    }
+
+    .seccion_contacto figure {
+        width: 80%;
         margin: auto;
     }
 
-    #banner_formulario img {
+    .seccion_contacto figure img {
         border-radius: 2.5%;
     }
 
-    #formularios {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        justify-content: space-around;
-        align-items: center;
-        padding: 2.5%;
+    .seccion_contacto div h1 {
+        text-align: center;
+        padding: 2%;
+        font-size: 1.5rem;
     }
 
     #formulario_registro { 
@@ -211,10 +222,13 @@ body{
         text-align: center;
     }
 
-    .campos_formulario {
-        display: inline;
+    .campos_formulario input{
+        margin: 0.8%;
     }
 
+    .campos_formulario button {
+        margin: 1%;
+    }
 
     /*=== Aplicando CSS al pie de página. ===*/
 
@@ -248,7 +262,7 @@ body{
 
 }
 
-/* Medium devices (tablets, 768px and up) */
+/*=== Vista de Tablet (>768px) ===*/
 @media (min-width: 768px) and (max-width: 1199px) { 
     
 /*=== Aplicando CSS al encabezado. ===*/
@@ -285,7 +299,7 @@ body{
     /*=== Aplicando CSS al cuerpo del documento. ===*/
 
     body {
-        padding-top: 20%;
+        padding-top: 30%;
     };
 
     #cuerpo {
@@ -321,21 +335,32 @@ body{
 
     /*=== Aplicando CSS al formulario de contacto. ===*/
 
-    #banner_formulario {
-        width: 85%;
-        margin: auto;
-    }
-
-    #banner_formulario img {
-        border-radius: 2.5%;
-    }
-
-    #formularios {
+    .seccion_contacto {
         display: grid;
         grid-template-columns: 1fr 1fr;
         justify-content: space-around;
         align-items: center;
         padding: 2.5%;
+
+    }
+
+    #seccion_iniciar_sesion #banner_contacto_movil{
+        display: none;
+    }
+
+    .seccion_contacto figure {
+        width: 100%;
+        margin: auto;
+    }
+
+    .seccion_contacto figure img {
+        border-radius: 2.5%;
+    }
+
+    .seccion_contacto div h1 {
+        text-align: center;
+        padding: 2%;
+        font-size: 1.5rem;
     }
 
     #formulario_registro { 
@@ -346,10 +371,13 @@ body{
         text-align: center;
     }
 
-    .campos_formulario {
-        display: inline;
+    .campos_formulario input{
+        margin: 0.8%;
     }
 
+    .campos_formulario button {
+        margin: 1%;
+    }
 
     /*=== Aplicando CSS al pie de página. ===*/
 
@@ -383,7 +411,7 @@ body{
 
 }
 
-/*=== Vista de escritorio ===*/
+/*=== Vista de escritorio (>1200px) ===*/
 @media (min-width: 1200px) { 
     
     /*=== Aplicando CSS al encabezado. ===*/
@@ -421,8 +449,8 @@ body{
 
     /*=== Aplicando CSS al cuerpo del documento. ===*/
 
-    #provisional {
-        margin-top: 10%;
+    body {
+        padding-top: 10%;
     }
 
     .seccion {
@@ -458,21 +486,32 @@ body{
 
     /*=== Aplicando CSS al formulario de contacto. ===*/
 
-    #banner_formulario {
-        width: 85%;
-        margin: auto;
-    }
-
-    #banner_formulario img {
-        border-radius: 2.5%;
-    }
-
-    #formularios {
+    .seccion_contacto {
         display: grid;
         grid-template-columns: 1fr 1fr;
         justify-content: space-around;
         align-items: center;
         padding: 2.5%;
+
+    }
+
+    #seccion_iniciar_sesion #banner_contacto_movil{
+        display: none;
+    }
+
+    .seccion_contacto figure {
+        width: 85%;
+        margin: auto;
+    }
+
+    .seccion_contacto figure img {
+        border-radius: 2.5%;
+    }
+
+    .seccion_contacto div h1 {
+        text-align: center;
+        padding: 2%;
+        font-size: 2rem;
     }
 
     #formulario_registro { 
@@ -483,10 +522,13 @@ body{
         text-align: center;
     }
 
-    .campos_formulario {
-        display: inline;
+    .campos_formulario input{
+        margin: 0.8%;
     }
 
+    .campos_formulario button {
+        margin: 1%;
+    }
 
     /*=== Aplicando CSS al pie de página. ===*/
 
@@ -520,7 +562,3 @@ body{
         text-align: center;
     }
 }
-
-
-
-
